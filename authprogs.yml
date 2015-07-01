@@ -1,0 +1,10 @@
+- hosts: svr01-vm101.saygoweb.com
+  name: Install authprogs
+  sudo: yes
+  vars_files:
+    - vars/keys.yml
+    - sites/svr01-vm101/authprogs/authprogs_users.yml
+  roles:
+    - role: has_authprogs
+      _users: "{{ authprogs_users }}"
+      _keys: "{{ keys }}"

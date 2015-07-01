@@ -1,0 +1,6 @@
+---
+authprogs_users:
+  - name: cambell
+    authorized:
+      - "{{ keys['cambell'] }}"
+

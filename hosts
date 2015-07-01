@@ -1,0 +1,5 @@
+# This is the inventory file for arketec
+
+[webservers]
+svr01-vm101.saygoweb.com
+svr01-vm102.saygoweb.com
