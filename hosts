@@ -2,7 +2,7 @@
 
 [webservers]
 svr01-vm101.saygoweb.com
-svr01-vm102.saygoweb.com
+svr01-vm102.saygoweb.com:7000
 
 [authprogs]
 svr01-vm101.saygoweb.com
