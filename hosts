@@ -1,6 +1,6 @@
 # This is the inventory file for arketec
 
-[webservers]
+[public_all]
 svr01-vm101.saygoweb.com
 svr01-vm102.saygoweb.com:7000
 

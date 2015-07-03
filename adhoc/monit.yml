@@ -1,6 +1,7 @@
 - hosts: public_all
   name: Monit info
   gather_facts: no
+  sudo: yes
   roles:
     # - role: which
     #   which_application: monit
