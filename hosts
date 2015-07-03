@@ -3,3 +3,6 @@
 [webservers]
 svr01-vm101.saygoweb.com
 svr01-vm102.saygoweb.com
+
+[authprogs]
+svr01-vm101.saygoweb.com
