@@ -1,0 +1,5 @@
+- hosts: all
+  name: Users with admin accounts
+  gather_facts: no
+  roles:
+    - users_admin

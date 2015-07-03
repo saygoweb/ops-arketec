@@ -1,0 +1,9 @@
+- hosts: public_all
+  name: Monit info
+  gather_facts: no
+  roles:
+    # - role: which
+    #   which_application: monit
+    - role: version
+      version_application: monit
+      version_arg: "-V"

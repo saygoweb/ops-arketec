@@ -1,0 +1,2 @@
+- name: OS Version
+  debug: msg="OS {{hostvars[inventory_hostname].ansible_distribution}} {{hostvars[inventory_hostname].ansible_distribution_version}} {{hostvars[inventory_hostname].ansible_architecture}}"

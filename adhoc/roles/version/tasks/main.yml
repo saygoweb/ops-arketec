@@ -1,0 +1,7 @@
+- name: Version
+  command: '{{version_application}} {{version_arg}}'
+  register: output
+  changed_when: false
+  
+- name: Output
+  debug: msg="{{ output.stdout }}"

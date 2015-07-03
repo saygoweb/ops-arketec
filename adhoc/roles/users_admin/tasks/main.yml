@@ -1,0 +1,8 @@
+- name: Admin Users
+  command: 'ls /home'
+  register: output
+  changed_when: false
+  
+- name: Output
+  debug: msg="{{ output.stdout.split() }}"
+  # with_items: output.stdout_lines

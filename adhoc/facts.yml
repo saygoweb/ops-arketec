@@ -1,0 +1,7 @@
+- hosts: all
+  name: Facts
+  # gather_facts: no
+  roles:
+    - os_version
+    - network
+    - users_admin

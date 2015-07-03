@@ -1,0 +1,15 @@
+- name: Authprogs Info
+  command: 'head -n 1 /usr/local/bin/authprogs'
+  register: output
+  changed_when: false
+  
+- name: Version (language)
+  debug: msg="{{ output.stdout }}"
+  
+- name: Fetch config file
+  sudo: yes
+  fetch: src=/root/.ssh/authprogs.conf dest=../site_info
+
+- name: Fetch authorized_keys
+  sudo: yes
+  fetch: src=/root/.ssh/authorized_keys dest=../site_info
