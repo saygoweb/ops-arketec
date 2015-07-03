@@ -1,0 +1,6 @@
+- hosts: authprogs
+  name: Configure authprogs
+  sudo: yes
+  gather_facts: no
+  roles:
+    - role: authprogs_config
