@@ -1,0 +1,15 @@
+- hosts: public_all
+  name: postfix info
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: Fetch config files
+      sudo: yes
+      fetch: src={{item}} dest=../site_info
+      with_items:
+        - "/etc/postfix/main.cf"
+        - "/etc/postfix/master.cf"
+        - "/etc/postfix/header_checks"
+        - "/etc/postfix/sender_access"
+        - "/etc/postfix/sasl/smtpd.conf"
+      

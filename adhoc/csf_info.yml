@@ -1,0 +1,13 @@
+- hosts: public_all
+  name: csf info
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: Fetch config file
+      sudo: yes
+      fetch: src={{item}} dest=../site_info
+      with_items:
+        - "/etc/csf/csf.conf"
+        - "/etc/csf/csf.pignore"
+        - "/usr/local/csf/bin/regex.custom.pm"
+      

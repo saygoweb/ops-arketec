@@ -1,5 +1,5 @@
-- name: Version
-  command: '{{version_application}} {{version_arg}}'
+- name: Show {{show_application}}
+  command: '{{show_application}} {{show_args}}'
   register: output
   changed_when: false
   

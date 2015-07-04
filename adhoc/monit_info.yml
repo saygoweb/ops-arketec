@@ -1,0 +1,11 @@
+- hosts: public_all
+  name: Monit info
+  gather_facts: no
+  sudo: yes
+  roles:
+    - role: show_output
+      show_application: monit
+      show_args: "-V"
+  tasks:
+    - name: Fetch config
+      synchronize: mode=pull src=/etc/monit/ dest=../site_info/{{inventory_hostname}}/etc/monit

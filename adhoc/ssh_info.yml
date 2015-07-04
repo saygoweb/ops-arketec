@@ -1,0 +1,8 @@
+- hosts: public_all
+  name: ssh info
+  gather_facts: no
+  sudo: yes
+  tasks:
+    - name: Fetch config file
+      sudo: yes
+      fetch: src=/etc/ssh/sshd_config dest=../site_info

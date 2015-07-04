@@ -1,7 +1,0 @@
-- name: Which
-  command: 'which {{which_application}}'
-  register: output
-  changed_when: false
-  
-- name: Output
-  debug: msg="{{ output.stdout }}"
