@@ -6,3 +6,17 @@ svr01-vm102.saygoweb.com:7000
 
 [authprogs]
 svr01-vm101.saygoweb.com
+
+[hosts]
+svr1.saygoweb.com
+svr2.saygoweb.com
+
+[host_net_nat]
+test1-host
+
+[test_host]
+test1-host
+
+[test]
+test1-vm100
+

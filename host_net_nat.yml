@@ -1,0 +1,7 @@
+- hosts: host_net_nat
+  name: Network NAT
+  gather_facts: no
+  roles:
+    - role: net_nat
+      net_natinfo: 
+        - device: eth1
